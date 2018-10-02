@@ -1,0 +1,25 @@
+<html>
+	<head><meta name="viewport" content="width=device-width, initial-scale=1.0"><script>
+		function f(){
+			var n = document.getElementById("input").value;
+			document.getElementById("result").innerText = sss(n);
+		}
+		function sss(n){ silabas = ["sa","se","si","so","za","ze","zi","zo","ta","te","ti","to","ba","be","bi","bo","ha","he","hi","ho","qa","qe","qi","qo","sha","she","shi","sho","tha","the","thi","tho","a","e","i","o","ah","eh","ih","oh","as","es","is","os","az","ez","iz","oz","ab","eb","ib","ob","at","et","it","ot","aq","eq","iq","oq"]; var s = ""; if(Number.isInteger(Number(n)) && n>0){ while(s.length != n){ var silaba = silabas[Math.floor(Math.random()*silabas.length)]; if(s[s.length-1] != silaba[0]) s += silaba; if(s.length > n) s = ""; } return s; } else { return "Valor invalido."; } };
+	</script><style>
+		.center{
+			text-align: center;
+			position: absolute;
+			left: 50%;
+			transform: translateX(-50%);
+			padding-top: 3em;
+		}
+	</style></head>
+	<body>
+		<div class="center">
+			<p id="message">Entre com a quantidade de digitos</p>
+			<input id="input" type="number" style="text-align: center"></input>
+			<button onclick="f()">click</button>
+			<p id="result"></p>
+		</div>
+	</body>
+</html>
