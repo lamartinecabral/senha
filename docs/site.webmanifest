@@ -1,0 +1,8 @@
+{
+  "short_name": "Senha",
+  "name": "Gerador de Senhas",
+  "description": "Gera senhas amigáveis para a memória",
+  "start_url": "/",
+  "display": "standalone",
+  "scope": "/",
+}
