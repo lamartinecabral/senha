@@ -2,7 +2,7 @@
   "short_name": "Senha",
   "name": "Senha",
   "description": "Gerador de Senhas",
-  "start_url": "/",
+  "start_url": "/senha",
   "display": "standalone",
   "scope": "/"
 }
