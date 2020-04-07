@@ -26,6 +26,8 @@ self.addEventListener('fetch', function(event) {
           cache.put(event.request, responseClone);
         });
         return response;
+      }).catch(function () {
+        return caches.match('/senha/');
       });
     }
   }));
